@@ -1,7 +1,7 @@
 windows执行pip install scrapy,出现
 
 ===
- error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tool
+errors: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tool
 s": http://landinghub.visualstudio.com/visual-cpp-build-tools
 
     ----------------------------------------
