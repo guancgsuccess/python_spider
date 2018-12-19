@@ -1,0 +1,22 @@
+windows执行pip install scrapy,出现
+
+===
+ error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tool
+s": http://landinghub.visualstudio.com/visual-cpp-build-tools
+
+    ----------------------------------------
+Command "E:\python\python_spider\venv\Scripts\python.exe -u -c "import setuptools, tokenize;__file__='C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\pip-build-dnhur40h\\Twisted\\setup.py';f=getattr(
+tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record C:\Users\ADMINI~1\AppData\Local\Temp\pip-mwpjpte4-record\i
+nstall-record.txt --single-version-externally-managed --compile --install-headers E:\python\python_spider\venv\include\site\python3.6\Twisted" failed with error code 1 in C:\Users\ADMINI~1\AppDa
+ta\Local\Temp\pip-build-dnhur40h\Twisted\
+===
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted 下载对应的版本即可
+
+Twisted-18.9.0-cp36-cp36m-win32.whl
+
+Twisted-18.9.0-cp36-cp36m-win_amd64.whl
+
+cp后面的数字代表python的版本号
+
+注意:坑爹的是我的计算机是64位,然而没用,只能选择32位的,握草!成功了!
