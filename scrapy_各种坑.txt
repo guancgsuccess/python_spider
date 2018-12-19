@@ -20,3 +20,12 @@ Twisted-18.9.0-cp36-cp36m-win_amd64.whl
 cp后面的数字代表python的版本号
 
 注意:坑爹的是我的计算机是64位,然而没用,只能选择32位的,握草!成功了!
+
+---------------------------------------------------------------------------------------------------
+执行scrapy bench命令时如果出现
+ModuleNotFoundError: No module named 'win32api'
+
+解决方案:
+https://pypi.org/project/pypiwin32/#files 下载
+
+pip install pypiwin32-223-py3-none-any.whl
