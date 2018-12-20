@@ -6,7 +6,7 @@ from myspiders.items import JumeiItem
 
 class JumeispiderSpider(scrapy.Spider):
     name = 'jumeiSpider'
-    allowed_domains = ['jumei.com']
+    #allowed_domains = ['jumei.com']
     #start_urls = ['http://jumei.com/']
     start_urls = []
 
@@ -38,8 +38,8 @@ class JumeispiderSpider(scrapy.Spider):
             good['title']=node.xpath('.//div[@class="s_l_name"]/a/text()').re(r'\w{3,}')
             good['title'] = ''.join(good['title'])
 
-            good['price'] = node.xpath('.//div[@class="search_list_price"]/span/text()').extract()
-
+            good['price'] = node.xpath('.//div[@class="search_list_price"]/span/text()').extract()[0]
+            good['img_url'] = node.xpath('.//div[@class="s_l_pic"]/a/img/@src').extract()[0]
             #goods.append(good)
             yield good
         #print(goods)

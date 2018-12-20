@@ -21,6 +21,6 @@ class RunnoobItem(Item):
 # 聚美優品
 class JumeiItem(Item):
     title = Field()
-    #img_url = Field()
+    img_url = Field()
     price = Field()
     #account = Field()

@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'myspiders.spiders'
 #USER_AGENT = 'myspiders (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -68,6 +68,7 @@ ITEM_PIPELINES = {
     'myspiders.pipelines.MyspidersPipeline':300,
     'myspiders.pipelines.TestPipeline':500,
     'myspiders.pipelines.JumeiSavePipeline':100,
+    'myspiders.a.B':600
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -90,3 +91,5 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+IMAGES_STORE = 'imgs/'
