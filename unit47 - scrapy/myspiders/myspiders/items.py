@@ -5,10 +5,22 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy.item import Item,Field
 
-
-class MyspidersItem(scrapy.Item):
+class MyspidersItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    #href = Field() #域,字段
+    #title = Field()
     pass
+
+class RunnoobItem(Item):
+    href = Field() # 域
+    title = Field()
+
+# 聚美優品
+class JumeiItem(Item):
+    title = Field()
+    #img_url = Field()
+    price = Field()
+    #account = Field()
